@@ -74,8 +74,8 @@ while True:
         if finger[1] == 0 and finger[0] == 1:  # Checks to see if the pointer finger is down and thumb finger is up
             autopy.mouse.click()  # Left click
 
-        if finger[1] == 1 and finger[2] == 1:  
-            autopy.mouse.click(button=autopy.mouse.Button.RIGHT) #RIGHT CLICK
+        if finger[1] == 1 and finger[2] == 1:  # Checks to see if the pointer finger is up and middle finger is up
+            autopy.mouse.click(button=autopy.mouse.Button.RIGHT) #Righ click
             
     cv2.imshow("Webcam", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
